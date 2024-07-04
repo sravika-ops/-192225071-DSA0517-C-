@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	char a;
+	cout<<"enter the alphabet";
+	cin>>a;
+	bool islowercasevowel1,isuppercasevowel1;
+	islowercasevowel1=((a=='a'||a=='e'||a=='i'||a=='o'||a=='u'));
+	isuppercasevowel1=((a=='A'||a=='E'||a=='I'||a=='O'||a=='U'));
+	if(islowercasevowel1||isuppercasevowel1)
+	cout<<a<<"is a vowel";
+	else
+	cout<<a<<"is not a constant";
+	return 0;
+}
