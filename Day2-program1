@@ -2,11 +2,15 @@
 using namespace std;
 int main()
 {
-	int n1;
-	cout<<"enter the number:"<<endl;
+	int n1,n2,n3;
+	cout<<"enter the first number:\n";
 	cin>>n1;
-	string condition;
-	condition=(n1%3==0)? "divisible" : "not divisible";
-	cout<<condition;
+	cout<<"enter the second number:\n";
+	cin>>n2;
+	cout<<"enter the third number:\n";
+	cin>>n3;
+	int max;
+	 max=(n1>n2 )?((n1>n3)? n1:n3): ((n2>n3)? n2:n3);
+	cout<<"maximum of three numbers="<<max;
 	return 0;
 }
